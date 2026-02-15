@@ -6,7 +6,7 @@ from app.rag import retrieve
 # Streamlit page setup
 st.set_page_config(page_title="InfoHub RAG Assistant", page_icon="🇬🇪")
 st.title("InfoHub RAG Assistant 🇬🇪")
-st.write("დასვით შეკითხვა საბაჟო თემებზე და მიიღეთ პასუხი ოფიციალური წყაროებით.")
+st.write("დასვით შეკითხვა საქართველოს საბაჟო თემებზე")
 
 SYSTEM_PROMPT = """შენ ხარ საქართველოს საბაჟო ინფორმაციის ასისტენტი.
 აუცილებლად უპასუხე ქართულად.
@@ -67,7 +67,7 @@ if st.button("კითხვა"):
 
     client = OpenAI()
 
-    with st.spinner("ვქმნი პასუხს..."):
+    with st.spinner("მუშავდება"):
         response = client.chat.completions.create(
             model="gpt-4o-mini",
             messages=[
