@@ -1,0 +1,12 @@
+fastapi
+uvicorn[standard]
+streamlit
+requests
+beautifulsoup4
+lxml
+playwright
+sentence-transformers
+faiss-cpu
+numpy
+openai
+rank-bm25

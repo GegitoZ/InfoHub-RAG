@@ -1,0 +1,17 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# Secrets
+.env
+.env.*
+
+# Data / indexes (avoid huge files in GitHub)
+data/raw_docs/
+data/doc_links.json
+data/index.faiss
+data/index_meta.json
+
+# OS
+.DS_Store
+Thumbs.db
